@@ -1,9 +1,11 @@
 $(function(){
-  $("#greeting").html("Hello, world!");
-  $("#greeting").click(function() {
-    $.ajax({
+  $gdiv = $("#greeting");
+  $gdiv.html("Hello, world!");
+  $gdiv.click(function() {
+  txt = $.ajax({
       url: "/text.txt",
-      confirmMsg: "Confirm?",
+      async: false
     });
+  $gdiv.html(txt);
   });
 });
