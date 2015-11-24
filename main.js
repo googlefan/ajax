@@ -4,6 +4,6 @@ $(function(){
     $.ajax({
       url: "/text.txt",
       confirmMsg: "Confirm?",
-    })
+    });
   });
 });
