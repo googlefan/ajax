@@ -6,6 +6,6 @@ $(function(){
       url: "/test.txt",
       async: false
     });
-  $gdiv.html(txt);
+  $gdiv.html(txt.responseText);
   });
 });
